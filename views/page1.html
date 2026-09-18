@@ -1,0 +1,16 @@
+<form id="form">
+    <select name="selectedOperateur" onchange="form.submit()">
+        {% for o in operateurs %}
+            {% if selectedOperateur == o.Numero %}
+                <option selected value="{{o.Numero}}">{{ o.Operateur }}</option>
+            {% else %}
+                <option value="{{o.Numero}}">{{ o.Operateur }}</option>
+            {% endif %} 
+        {% endfor %}
+    </select>
+    <select>
+        {% for s in sousTraitants %}
+            <option>{{ s.SousTraitant }}</option>
+        {% endfor %}
+    </select>
+</form>
