@@ -16,6 +16,3 @@ python -m venv .venv
 pip install sqlalchemy sqlalchemy-access pyodbc fastapi[standard]
 pip freeze > requirements.txt
 ```
-
-
-test
